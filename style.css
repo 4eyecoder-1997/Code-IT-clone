@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;400;500;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 13px;
+    min-height: 100vh;
+    overflow: hidden;
+    font-family: 'Raleway', sans-serif;
+
+}
+
+/* ***** Utilities ***** */
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+.icon {
+    color: #fff;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/******* contact details *********/
+.contact-details {
+    background-color: #1d3548;
+    font-size: 12px;
+    padding: 10px 50px;
+}
+
+.contact-details a {
+    color: #fff;
+    font-family: sans-serif;
+}
+
+/* contact details left block */
+
+.contact-details .left-block .icon {
+    padding-right: 2px;
+}
+
+.fa-envelope-open-text {
+    padding-left: 5px;
+}
+
+/* contact details right block */
+.contact-details .right-block .icon {
+    padding: 0 5px;
+}
+
+.contact-details .right-block .icon:hover {
+    color: #3DB2FF;
+}
+
+.line {
+    color: #fff;
+}
+
+.login-btn {
+    padding: 0 5px;
+}
+
+.beta-version-btn {
+    font-size: 12px;
+    background-color: #0d6efd;
+    border: none;
+    color: #fff;
+    padding: 3px 5px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: box-shadow .3s;
+}
+
+.beta-version-btn:hover {
+    box-shadow: -2px 3px 52px 7px rgba(0,0,0,0.34) inset;
+    -webkit-box-shadow: -2px 4px 52px 7px rgba(0,0,0,0.34) inset;
+    -moz-box-shadow: -2px 4px 52px 7px rgba(0,0,0,0.34) inset;
+}
+
+/********* navbar **********/
+.navbar {
+    padding: 10px 50px;
+    background-color: #f8f9fa;
+    position: relative;
+}
+
+.navbar .logo {
+    width: 150px;
+    margin-left: -10px;
+}
+
+.navbar .navigation-menu .navigation-link{
+    margin-left: 10px;
+    font-size: 13px;
+    font-weight: 500;
+    transition: color .2s;
+}
+
+/* dropdown btn */
+.fa-caret-down {
+    margin-left: 3px;
+}
+
+.navbar .navigation-menu .navigation-link:hover {
+    color: #3DB2FF;
+}
+
+.active {
+    color: #e47962;
+}
+
+/* dropdown */
+.dropdown {
+    width: 200px;
+    position: absolute;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    right: 250px;
+    top: 50px;
+    overflow: hidden;
+    padding: 5px 0;
+    display: none;
+}
+
+.dropdown a {
+    display: block;
+    font-size: 13px;
+    padding: 5px 5px;
+    font-weight: 500;
+}
+
+.dropdown a:hover {
+    background-color: #f1f1f1;
+}
