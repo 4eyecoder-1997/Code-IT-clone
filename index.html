@@ -14,30 +14,29 @@
 </head>
 
 <body>
-    <!--***** contact detail *****-->
+    <!-- ***** contact detail ***** -->
     <section class="contact-details flex">
         <!-- left side contains phone & email -->
         <div class="left-block">
-            <!-- <p class="phone-no"> -->
-                <i class="fas fa-mobile-alt icon"></i>
-                <a href="tel:9862130505">9862130505,</a>
-                <a href="tel:025525163">025-525163</a>
-            <!-- </p> -->
+            <!-- contact number -->
+            <i class="fas fa-mobile-alt icon"></i>
+            <a href="tel:9862130505">9862130505,</a>
+            <a href="tel:025525163">025-525163</a>
+            <!-- email  -->
+            <i class="fas fa-envelope-open-text icon"></i>
+            <a href="mailto:info@codeit.com.np">info@codeit.com.np</a>
 
-            <!-- <p class="email"> -->
-                <i class="fas fa-envelope-open-text icon"></i>
-                <a href="mailto:info@codeit.com.np">info@codeit.com.np</a>
-            <!-- </p> -->
         </div>
 
         <!-- right side contains social media & login -->
         <div class="right-block">
+            <!-- social media icons -->
             <a href=""><i class="fab fa-facebook-f icon"></i></a>
             <a href=""><i class="fab fa-instagram icon"></i></a>
             <a href=""><i class="fab fa-youtube icon"></i></a>
             <a href=""><i class="fab fa-google-plus-g icon"></i></a>
             <span class="line">|</span>
-
+            <!-- login btn & beta btn -->
             <a href="#" id="login-btn" class="login-btn">Login</a>
             <button class="beta-version-btn">Beta Version</button>
         </div>
@@ -56,22 +55,141 @@
                 <a href="#" class="navigation-link">About Us</a>
                 <a href="#" class="navigation-link">Gallery</a>
                 <a href="#" class="navigation-link drop-btn">Courses <i class="fas fa-caret-down"></i></a>
-                    <!-- dropdown for courses link -->
-                    <div class="dropdown">
-                        <a href="#">Programming Courses</a>
-                        <a href="#">FullStack Web Development</a>
-                        <a href="#">Frontend Development</a>
-                        <a href="#">Mobile App Development</a>
-                        <a href="#">Microsoft Dot Net</a>
-                        <a href="#">Other Courses</a>
-                    </div>
-                
+                <!-- dropdown for courses link -->
+                <div class="drop-down">
+                    <a href="#">Programming Courses</a>
+                    <a href="#">FullStack Web Development</a>
+                    <a href="#">Frontend Development</a>
+                    <a href="#">Mobile App Development</a>
+                    <a href="#">Microsoft Dot Net</a>
+                    <a href="#">Other Courses</a>
+                </div>
+
                 <a href="#" class="navigation-link">Blog</a>
                 <a href="#" class="navigation-link">Our Service</a>
                 <a href="#" class="navigation-link">Contact Us</a>
             </div>
         </div>
+
+        <!-- ***** Carousel / Image Slider******* -->
+        <section class="image-slider">
+            <!-- image sliders -->
+            <div class="slider-box">
+                <div class="slider-content">
+                    <h1 class="slider-heading">Flutter workshop at Koshi St.James College</h1>
+                    <div class="detail-btn">
+                        <a href="#" class="contact-us-btn">Contact Us</a>
+                        <a href="#" class="learn-more-btn">Learn More</a>
+                    </div>
+                </div>
+                <button class="prev-btn" id="prev-btn"><i class="fas fa-chevron-left icon"></i></button>
+                <button class="next-btn" id="next-btn"><i class="fas fa-chevron-right icon"></i></button>
+            </div>
+
+        </section>
     </header>
+
+    <!-- ***** BODY SECTION ***** -->
+    <main>
+        <!-- second section -->
+        <!-- our services -->
+        <section class="our-services">
+            <h2 class="heading">Our Services</h2>
+            <p class="details">Seeing the scope of IT Education for the future, we are providing extensive training on
+                more than a 100 Professional IT Courses! The courses are not limited to individuals only!</p>
+
+            <!-- our services options -->
+            <div class="services-opt flex">
+                <a href="#" class="service-box">
+                    <i class="fas fa-laptop-code icon"></i>
+                    <p>Software Development</p>
+                </a>
+
+                <a href="#" class="service-box">
+                    <i class="fas fa-globe-europe icon"></i>
+                    <p>Website Designing</p>
+                </a>
+
+                <a href="#" class="service-box">
+                    <i class="fab fa-app-store-ios icon"></i>
+                    <p>Mobile App Development</p>
+                </a>
+
+                <a href="#" class="service-box">
+                    <i class="fas fa-user-graduate icon"></i>
+                    <p>Professional Training</p>
+                </a>
+            </div>
+        </section>
+
+        <!-- ***** third Section ***** -->
+        <!-- Short brief -->
+        <section class="brief-desc flex">
+            <div class="left-container">
+                <iframe width="500" height="250" src="https://www.youtube.com/embed/DqfbSBggxvY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="right-container">
+                <p>Code IT is one of the best inclusive computer training institutes in Dharan, Nepal. Established in
+                    2017, our professional IT Training and Development center has been employing experts in this field
+                    to impart professional education to trainees. We offer well-structured complete professional
+                    training in various Programming Languages, Web Designing as well as Development Training that is
+                    based upon the current recruitment needs in the IT market.To summarize, Code IT is a complete
+                    learning institute...</p>
+                <a href="#" class=" learn-more-btn btn">Learn More</a>
+            </div>
+        </section>
+
+        <!-- ***** popular courses ***** -->
+        <section class="popular-courses">
+            <h2 class="title">Popular Courses</h2>
+            <!-- contain 8 courses box -->
+            <div class="courses flex">
+                <!-- boxes  -->
+                <a class="courses-box">
+                    <img src="https://miro.medium.com/max/1400/1*n9ZdCQ2jrDR-cwSckKyzXw.png" alt="">
+                    <p>Flutter Framework Training</p>
+                </a>
+
+                <a class="courses-box">
+                    <img src="https://laravelnews.imgix.net/images/vue-spa-with-laravel.png?ixlib=php-3.3.1" alt="">
+                    <p>Flutter Framework Training</p>
+                </a>
+
+                <a class="courses-box">
+                    <img src="https://www.multidots.com/wp-content/uploads/2018/05/banner-5-1.jpg" alt="">
+                    <p>Flutter Framework Training</p>
+                </a>
+
+                <a class="courses-box">
+                    <img src="https://codeit.com.np/course-image/1642414703c-programming.png" alt="">
+                    <p>Flutter Framework Training</p>
+                </a>
+
+                <a class="courses-box">
+                    <img src="https://codeit.com.np/course-image/1642414720django.jpeg" alt="">
+                    <p>Flutter Framework Training</p>
+                </a>
+
+                <a class="courses-box">
+                    <img src="https://codeit.com.np/course-image/1642414856core%20java.jpeg" alt="">
+                    <p>Flutter Framework Training</p>
+                </a>
+
+                <a class="courses-box">
+                    <img src="https://codeit.com.np/course-image/1642414879php-training-nepal.jpeg" alt="">
+                    <p>Flutter Framework Training</p>
+                </a>
+
+                <a class="courses-box">
+                    <img src="https://codeit.com.np/course-image/1642414690C-programming-language-rises-amid-COVID-19.jpeg" alt="">
+                    <p>Flutter Framework Training</p>
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- JavaScript link -->
     <script src="main.js"></script>
 </body>
 

@@ -1,12 +1,11 @@
-const dropDownBtn = document.querySelector('.drop-btn');
+const dropBtn = document.querySelector('.drop-btn');
 
+dropBtn.addEventListener('click', ()=> {
+    const dropDown = document.querySelector('.drop-down');
 
-dropDownBtn.addEventListener('click', ()=> {
-    let dropDown = document.querySelector('.dropdown');
-
-    if (dropDown.style.display == 'none') {
-        dropDown.style.display == 'block';
+    if (dropDown.style.display === 'none') {
+        dropDown.style.display === 'display';
     } else {
-        dropDown.style.display == 'none';
+        dropDown.style.display === 'none';
     }
 });

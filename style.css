@@ -9,8 +9,10 @@
 body {
     font-size: 13px;
     min-height: 100vh;
-    overflow: hidden;
     font-family: 'Raleway', sans-serif;
+    line-height: 150%;
+    word-spacing: 130%;
+    letter-spacing: 180%;
 
 }
 
@@ -18,10 +20,13 @@ body {
 a {
     text-decoration: none;
     color: #000;
+    font-size: 13px;
+    cursor: pointer;
 }
 
 .icon {
     color: #fff;
+    cursor: pointer;
 }
 
 .flex {
@@ -81,9 +86,9 @@ a {
 }
 
 .beta-version-btn:hover {
-    box-shadow: -2px 3px 52px 7px rgba(0,0,0,0.34) inset;
-    -webkit-box-shadow: -2px 4px 52px 7px rgba(0,0,0,0.34) inset;
-    -moz-box-shadow: -2px 4px 52px 7px rgba(0,0,0,0.34) inset;
+    box-shadow: -2px 3px 52px 7px rgba(0, 0, 0, 0.34) inset;
+    -webkit-box-shadow: -2px 4px 52px 7px rgba(0, 0, 0, 0.34) inset;
+    -moz-box-shadow: -2px 4px 52px 7px rgba(0, 0, 0, 0.34) inset;
 }
 
 /********* navbar **********/
@@ -91,14 +96,16 @@ a {
     padding: 10px 50px;
     background-color: #f8f9fa;
     position: relative;
+
 }
 
 .navbar .logo {
     width: 150px;
     margin-left: -10px;
+    cursor: pointer;
 }
 
-.navbar .navigation-menu .navigation-link{
+.navbar .navigation-menu .navigation-link {
     margin-left: 10px;
     font-size: 13px;
     font-weight: 500;
@@ -118,8 +125,9 @@ a {
     color: #e47962;
 }
 
-/* dropdown */
-.dropdown {
+/***** dropdown ******/
+.drop-down {
+    display: none;
     width: 200px;
     position: absolute;
     background-color: #fff;
@@ -129,16 +137,215 @@ a {
     top: 50px;
     overflow: hidden;
     padding: 5px 0;
-    display: none;
+    z-index: 10;
 }
 
-.dropdown a {
+.drop-down a {
     display: block;
     font-size: 13px;
     padding: 5px 5px;
     font-weight: 500;
 }
 
-.dropdown a:hover {
+.drop-down a:hover {
     background-color: #f1f1f1;
+    
+}
+
+/* ***** Carousel / Image Slider ***** */
+.image-slider {
+    position: relative;
+}
+
+/* slider box  */
+.slider-box {
+    background:linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(/images/img\ 1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    min-height: 70vh;
+    padding: 0 50px;
+}
+
+/* slider content */
+.slider-content {
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.slider-heading {
+    font-size: 26px;
+    color: #fff;
+    padding-bottom: 25px;
+}
+
+.detail-btn {
+    text-align: center;
+}
+
+.contact-us-btn {
+    color: #fff;
+    background-color: #0d6efd;
+    cursor: pointer;
+    font-size: 13px;
+    padding: 5px 8px;
+    border-radius: 5px;
+    transition: box-shadow .2s;
+}
+
+.contact-us-btn:hover {
+    box-shadow: -2px 3px 52px 7px rgba(0, 0, 0, 0.34) inset;
+    -webkit-box-shadow: -2px 4px 52px 7px rgba(0, 0, 0, 0.34) inset;
+    -moz-box-shadow: -2px 4px 52px 7px rgba(0, 0, 0, 0.34) inset;
+}
+
+.learn-more-btn {
+    background-color: #fff;
+    padding: 5px 8px;
+    border-radius: 5px;
+}
+
+
+/* next and prev button */
+.prev-btn, .next-btn {
+    position: absolute;
+    border: none;
+    border-radius: 5px;
+    background-color: #ccc;
+    padding: 5px 10px;
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+.prev-btn:hover, .next-btn:hover {
+    background-color: #fff;
+}
+
+.prev-btn {
+    top: 45%;
+}
+
+.next-btn {
+    top: 45%;
+    right: 50px;
+}
+
+.slider-box .icon {
+    font-size: 25px;
+    color: #333;
+}
+
+
+
+
+
+/* OUR SERVICES */
+.heading {
+    font-size: 20px;
+    font-weight: 500;
+    margin: 10px 0;
+}
+
+.details {
+    color: #333;
+    font-size: 12px;
+    padding: 0 230px;
+}
+
+.our-services {
+    text-align: center;
+    padding: 20px 0 30px 0;
+}
+
+.services-opt {
+    justify-content: center;
+}
+
+.service-box {
+    width: 165px;
+    height: 100px;
+    background-color: #1d3548;
+    color: #fff;
+    padding: 15px 5px;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+.service-box i {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.service-box:hover {
+    background-color: #e47962;
+}
+
+
+
+/* ***** Third Section******* */
+.brief-desc {
+    background-color: #f8f9fa;
+    padding: 50px;
+}
+
+.right-container {
+    padding: 0 30px;
+    text-align: center;
+}
+
+.right-container p {
+    margin-bottom: 30px;
+}
+
+.btn {
+    padding: 8px 14px;
+    background-color: #dc3545;
+    color: #fff; 
+    transition: background .2s;
+}
+
+.btn:hover {
+    background: darkred;
+}
+
+
+/* ***** Popular Courses *****  */
+.popular-courses {
+    padding: 30px 50px; 
+    text-align: center;
+}
+
+.title {
+    font-size: 22px;
+    margin: 20px;
+}
+
+.courses {
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.courses-box img {
+    width: 190px;
+    height: 110px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.courses-box {
+    width: 200px;
+    height: 160px;
+    background-color: #fff;
+    padding: 8px 5px 15px 5px;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    transition: transform .5s;
+}
+
+.courses-box:hover {
+    transform: translateY(-5px);
 }
