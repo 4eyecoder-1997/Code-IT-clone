@@ -74,7 +74,7 @@
         <!-- ***** Carousel / Image Slider******* -->
         <section class="image-slider">
             <!-- image sliders -->
-            <div class="slider-box">
+            <div class="slider-box slide-one">
                 <div class="slider-content">
                     <h1 class="slider-heading">Flutter workshop at Koshi St.James College</h1>
                     <div class="detail-btn">
@@ -82,9 +82,41 @@
                         <a href="#" class="learn-more-btn">Learn More</a>
                     </div>
                 </div>
-                <button class="prev-btn" id="prev-btn"><i class="fas fa-chevron-left icon"></i></button>
-                <button class="next-btn" id="next-btn"><i class="fas fa-chevron-right icon"></i></button>
+                <!-- <button class="prev-btn" id="prev-btn"><i class="fas fa-chevron-left icon"></i></button>
+                <button class="next-btn" id="next-btn"><i class="fas fa-chevron-right icon"></i></button> -->
             </div>
+
+            <div class="slider-box slide-two">
+                <div class="slider-content">
+                    <h1 class="slider-heading">Mobile App Development Training</h1>
+                    <div class="detail-btn">
+                        <a href="#" class="contact-us-btn">Contact Us</a>
+                        <a href="#" class="learn-more-btn">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="slider-box slide-three">
+                <div class="slider-content">
+                    <h1 class="slider-heading">Laravel PHP Framework Training</h1>
+                    <div class="detail-btn">
+                        <a href="#" class="contact-us-btn">Contact Us</a>
+                        <a href="#" class="learn-more-btn">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="slider-box slide-four">
+                <div class="slider-content">
+                    <h1 class="slider-heading">Project Presentation</h1>
+                    <div class="detail-btn">
+                        <a href="#" class="contact-us-btn">Contact Us</a>
+                        <a href="#" class="learn-more-btn">Learn More</a>
+                    </div>
+                </div>
+            </div>
+
+            <button class="prev-btn" id="prev-btn" onclick="controller(-1)"><i class="fas fa-chevron-left icon"></i></button>
+            <button class="next-btn" id="next-btn" onclick="controller(1)"><i class="fas fa-chevron-right icon"></i></button>
 
         </section>
     </header>
@@ -126,7 +158,10 @@
         <!-- Short brief -->
         <section class="brief-desc flex">
             <div class="left-container">
-                <iframe width="500" height="250" src="https://www.youtube.com/embed/DqfbSBggxvY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe width="500" height="250" src="https://www.youtube.com/embed/DqfbSBggxvY"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
             </div>
             <div class="right-container">
                 <p>Code IT is one of the best inclusive computer training institutes in Dharan, Nepal. Established in
@@ -152,37 +187,38 @@
 
                 <a class="courses-box">
                     <img src="https://laravelnews.imgix.net/images/vue-spa-with-laravel.png?ixlib=php-3.3.1" alt="">
-                    <p>Flutter Framework Training</p>
+                    <p>Laravel with Vue js Training</p>
                 </a>
 
                 <a class="courses-box">
                     <img src="https://www.multidots.com/wp-content/uploads/2018/05/banner-5-1.jpg" alt="">
-                    <p>Flutter Framework Training</p>
+                    <p>Laravel Training</p>
                 </a>
 
                 <a class="courses-box">
                     <img src="https://codeit.com.np/course-image/1642414703c-programming.png" alt="">
-                    <p>Flutter Framework Training</p>
+                    <p>C++ Programming</p>
                 </a>
 
                 <a class="courses-box">
                     <img src="https://codeit.com.np/course-image/1642414720django.jpeg" alt="">
-                    <p>Flutter Framework Training</p>
+                    <p>Web Development with Django</p>
                 </a>
 
                 <a class="courses-box">
                     <img src="https://codeit.com.np/course-image/1642414856core%20java.jpeg" alt="">
-                    <p>Flutter Framework Training</p>
+                    <p>Core Java Training</p>
                 </a>
 
                 <a class="courses-box">
                     <img src="https://codeit.com.np/course-image/1642414879php-training-nepal.jpeg" alt="">
-                    <p>Flutter Framework Training</p>
+                    <p>PHP Training</p>
                 </a>
 
                 <a class="courses-box">
-                    <img src="https://codeit.com.np/course-image/1642414690C-programming-language-rises-amid-COVID-19.jpeg" alt="">
-                    <p>Flutter Framework Training</p>
+                    <img src="https://codeit.com.np/course-image/1642414690C-programming-language-rises-amid-COVID-19.jpeg"
+                        alt="">
+                    <p>C Programming Training</p>
                 </a>
             </div>
         </section>

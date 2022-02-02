@@ -125,6 +125,10 @@ a {
     color: #e47962;
 }
 
+.active:hover {
+    color: none;
+}
+
 /***** dropdown ******/
 .drop-down {
     display: none;
@@ -166,7 +170,30 @@ a {
     width: 100%;
     min-height: 70vh;
     padding: 0 50px;
+    display: none;
 }
+
+.slide-two {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(/images/img\ 2.jpg);;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.slide-three {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(/images/img\ 3.jpg);;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.slide-four {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(/images/img\ 4.jpg);;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
 
 /* slider content */
 .slider-content {
@@ -215,7 +242,7 @@ a {
     border: none;
     border-radius: 5px;
     background-color: #ccc;
-    padding: 5px 10px;
+    padding: 8px 12px;
     cursor: pointer;
     opacity: 0.5;
 }
@@ -226,15 +253,16 @@ a {
 
 .prev-btn {
     top: 45%;
+    left: 5%;
 }
 
 .next-btn {
     top: 45%;
-    right: 50px;
+    right: 5%;
 }
 
-.slider-box .icon {
-    font-size: 25px;
+.image-slider .icon {
+    font-size: 20px;
     color: #333;
 }
 
@@ -348,4 +376,4 @@ a {
 
 .courses-box:hover {
     transform: translateY(-5px);
-}
+} 
