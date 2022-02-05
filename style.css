@@ -273,8 +273,6 @@ a {
 
 
 
-
-
 /* OUR SERVICES */
 .heading {
     font-size: 20px;
@@ -423,6 +421,7 @@ a {
 
 /* Upcoming Classes */
 .owl-carousel {
+    background-color: #ccc;
     padding: 30px 50px;
     
 }
@@ -431,20 +430,6 @@ a {
     justify-content: center;
     position: relative;
     flex-wrap: wrap;
-}
-
-.classes-box .prev-btn{
-    left: -2%;
-    background-color: #5f7a8f;
-}
-
-.classes-box .next-btn{
-    right: -2%;
-    background-color: #5f7a8f;
-}
-
-.classes-box .next-btn:hover, .prev-btn:hover{
-    background-color: #333;
 }
 
 
@@ -465,6 +450,9 @@ a {
 
 .classes-box .box-content {
     padding: 10px;
+    background-color: #fff;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
 }
 
 .classes-box .box-content .course-name {
@@ -484,7 +472,7 @@ a {
 .classes-box .box-content .outlined-box {
     margin: 4px 0;
     border: 1px solid #ccc;
-    padding: 2px 5px;
+    padding: 1px 5px;
     text-align: center;
     font-family: sans-serif;
 }
@@ -499,3 +487,87 @@ small {
     background: #ccc;
 }
 
+
+/* ****************** SEVENTH SECTION******************** */
+/* CREW MEMBERS */
+.crew-member {
+    background: #f1f1f1;
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
+.crew-box {
+    flex-wrap: wrap;
+}
+
+.crew-detail-container {
+    min-width: 200px;
+    max-height: 260px;
+    background-color: #fff;
+    position: relative;
+    border-radius: 5px;
+    overflow: hidden;
+    margin:10px;
+}
+
+.crew-image {
+    position: absolute;
+    width: inherit;
+    height: 260px;
+    transform: scaleX(1.1);
+}
+
+.crew-image img{
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+    transition: all .5s;
+    
+}
+
+.crew-detail-container:hover .crew-image img {
+    width: 110px;
+    height: 120px;
+    margin: 25px 58px 0;
+    transition: all .5s;
+
+}
+
+.top-sec {
+    width: inherit;
+    height: 80px;
+    background-color: #3DB2FF;
+}
+
+.bottom-sec {
+    background: #1d3548;
+    width: inherit;
+    height: calc(280px - 80px);
+    color: #fff;
+    padding: 75px 10px 10px;
+    text-align: center;
+}
+
+.bottom-sec .crew-position {
+    color: #0d6efd;
+    margin-bottom: 5px;
+}
+
+.bottom-sec .crew-contact {
+    justify-content: center;
+}
+
+.bottom-sec .crew-contact .social-icon {
+    font-size: 18px;
+    width: 35px;
+    height: 35px;
+    margin: 5px;
+    background-color: #0d6efd;
+    border-radius: 50%;
+    justify-content: center;
+}
+
+/* .bottom-sec .crew-contact .social-icon:hover {
+    cursor: pointer;
+    background-color: #3DB2FF;
+}  */
